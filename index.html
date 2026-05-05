@@ -396,12 +396,12 @@
             setInterval(updateCountdown, 1000);
             updateCountdown();
 
-            // document.addEventListener("contextmenu", e => e.preventDefault());
-            // document.onkeydown = e => {
-            //     if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && [73, 74, 67].includes(e.keyCode))) {
-            //         e.preventDefault();
-            //     }
-            // };
+            document.addEventListener("contextmenu", e => e.preventDefault());
+            document.onkeydown = e => {
+                if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && [73, 74, 67].includes(e.keyCode))) {
+                    e.preventDefault();
+                }
+            };
         </script>
 
 </html>
